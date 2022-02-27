@@ -2,7 +2,7 @@
   "name": "make-mui-style",
   "displayName": "Make Mui Style",
   "description": "Create a template file for makeStyles",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "publisher": "MuiStyle",
   "repository": "https://github.com/NicolasPrr/make-me-style",
   "engines": {
