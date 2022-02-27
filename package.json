@@ -4,6 +4,7 @@
   "description": "Create a template file for makeStyles",
   "version": "0.1.0",
   "publisher": "MuiStyle",
+  "repository": "https://github.com/NicolasPrr/make-me-style",
   "engines": {
     "vscode": "^1.63.0"
   },
