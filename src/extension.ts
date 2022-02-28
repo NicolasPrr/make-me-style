@@ -16,16 +16,16 @@ export function activate(context: vscode.ExtensionContext) {
         return;
       }
       const fileNameSplitted = fileNamePath.split("\\");
-      const fileNameExt = fileNameSplitted[fileNameSplitted.length - 1]; //file name with  extension
-      const currentPath = fileNamePath.replace(fileNameExt, "");
+      const fileNameWithExt = fileNameSplitted[fileNameSplitted.length - 1]; //file name with  extension
+      const currentPath = fileNamePath.replace(fileNameWithExt, "");
 
-      console.log({ fileNameExt, fileNameSplitted, currentPath });
+      console.log({ fileNameWithExt, fileNameSplitted, currentPath });
 
-      const splitedDot = fileNameExt.split(".");
+      const splitedDot = fileNameWithExt.split(".");
       const ext = splitedDot[splitedDot.length - 1];
 
       const styleNameFile = replaceLastOccurrenceInString(
-        `${capitalice(fileNameExt.replace(ext, ""))}Style`,
+        `${capitalice(fileNameWithExt.replace(ext, ""))}Styles`,
         ".",
         ""
       );
